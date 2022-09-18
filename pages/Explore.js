@@ -29,6 +29,7 @@ const Explore = () => {
     const tokenContract = new ethers.Contract(nftAddress, NFT.abi, provider);
     const marketContract = new ethers.Contract(marketplaceAddress, Market.abi, provider);
     const data = await marketContract.fetchMarketItems();
+    console.log(data);
 
     const items = await Promise.all(data.map(async i => {
       const tokenUri = await tokenContract.tokenURI(i.tokenId);
@@ -85,12 +86,17 @@ const Explore = () => {
     </div>
 <ExploreNav />
 
-<div className="abc">
+
 <div className="flex justify-center">
       <div className="px-4" style={{ maxWidth: '350px' }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
-            nfts.map((nft, i) => (
+            nfts.map((nft, i) => {
+
+              console.log(nft, '<<<<<')
+
+              return(
+
               <div key={i} className="border shadow rounded-xl overflow-hidden">
                 <img src={nft.image} />
                 <div className="p-4">
@@ -104,11 +110,10 @@ const Explore = () => {
                   <button className="mt-4 w-full bg-pink-500 text-white font-bold py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy</button>
                 </div>
               </div>
-            ))
+            )})
           }
         </div>
       </div>
-    </div>
     </div>
     </div>
 
