@@ -11,39 +11,33 @@ export default function Footer() {
         </div>
 
         <div>
-          <Link href=''>
-          <a className='me-4 text-reset'>
-          <img src="facebook-f (1).svg" alt="" width="30" height="30" />
+          <Link href='https://www.facebook.com/profile.php?id=100031125340477'>
+          <a className='me-4 text-reset' target='_blank'>
+          <img src="facebook-f (1).svg" alt="" width="35" height="35" />
           </a>
           </Link>
 
-          <Link href=''>
-          <a className='me-4 text-reset'>
-          <img src="twitter .svg" alt="" width="30" height="30" />
+          <Link href="mailto:djaved034@gmail.com">
+          <a className='me-4 text-reset' target='_blank'>
+          <img src="gmail.png" alt="" width="32" height="32" />
           </a>
           </Link>
 
-          <Link href=''>
-          <a className='me-4 text-reset'>
-          <img src="Google.svg.png" alt="" width="30" height="30" />
+          <Link href='https://www.instagram.com/dania_javed_khan/'>
+          <a className='me-4 text-reset' target='_blank'>
+          <img src="Instagram.svg.png" alt="" width="35" height="35" />
           </a>
           </Link>
 
-          <Link href=''>
-          <a className='me-4 text-reset'>
-          <img src="Instagram.svg.png" alt="" width="30" height="30" />
+          <Link href='https://www.linkedin.com/in/dania-javed-a706b1245/'>
+          <a className='me-4 text-reset' target='_blank'>
+          <img src="linkedin (1).svg" alt="" width="35" height="35" />
           </a>
           </Link>
 
-          <Link href=''>
-          <a className='me-4 text-reset'>
-          <img src="linkedin (1).svg" alt="" width="30" height="30" />
-          </a>
-          </Link>
-
-          <Link href=''>
-          <a className='me-4 text-reset'>
-          <img src="github (1).svg" alt="" width="30" height="30" />
+          <Link href='https://github.com/DaniaJavedKhan'>
+          <a className='me-4 text-reset' target='_blank'>
+          <img src="github (1).svg" alt="" width="35" height="35" />
           </a>
           </Link>
         </div>

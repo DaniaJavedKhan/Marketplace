@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light fixed-nav-bar">
   <div className="container-fluid">
     <a className="navbar-brand">
-    <img src="/Neftors.jpg" alt="" width="150" height="50" />
+    <img src="/fineNFTs.jpg" alt="" width="200" height="65" />
     </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -24,22 +24,10 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Explore
-            </a>
-
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link href="/Explore"><a className="dropdown-item">All NFTs</a></Link>
-            <hr className="dropdown-divider"></hr>
-            <Link href="/Art"><a className="dropdown-item">Art</a></Link>
-            <hr className="dropdown-divider"></hr>
-            <Link href="/Music"><a className="dropdown-item">Music</a></Link>
-            <hr className="dropdown-divider"></hr>
-            <Link href="/Videos"><a className="dropdown-item">Videos</a></Link>
-            <hr className="dropdown-divider"></hr>
-            <Link href="/Virtual_Worlds"><a className="dropdown-item">Virtual Worlds</a></Link></li>
-        </ul>
+        <li className="nav-item">
+          <Link href="/Explore">
+            <a className="nav-link">Explore</a>
+          </Link>
         </li>
         <li className="nav-item">
           <Link href="/Dashboard">
@@ -67,10 +55,6 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-success" type="submit">Search</button>
-      </form>
 
     </div>
   </div>

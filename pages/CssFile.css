@@ -159,10 +159,13 @@ a {
     margin-left: 20px;
   }
   
-  .fixed-nav-bar { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 50px; background-color: #000000; }
+  .fixed-nav-bar { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 70px; background-color: #000000; }
   
-  .fixed-footer { position: fixed; bottom: 0; left: 0; z-index: 9999; width: 100%; height: 70px; background-color: #000000; }
+  .fixed-footer { position: fixed; bottom: 0; left: 0; z-index: 9999; width: 100%; height: 70px; background-color: #000000; padding-left: 17px;}
   
+  .me-4.text-reset{
+    padding-left: 7px;
+  }
   .text-center.text-lg-start.text-muted{
     margin-top: 30px;
   }
@@ -188,13 +191,21 @@ a {
     --bs-navbar-active-hover-color: #f99696;
     --bs-navbar-hover-color: #f99696;
   }
-  .btn.btn-success{
+  .btn.btn-primary{
     --bs-btn-color: #ffffff;
-    --bs-btn-border-color: #f99696;
+    --bs-btn-border-color: #f36565;
     --bs-btn-hover-color: #000;
     --bs-btn-hover-bg: #96f9d3;
     --bs-btn-hover-border-color: #96f9d3;
-    --bs-btn-bg: #f99696;
+    --bs-btn-bg: #f36565;
+  }
+  .btn.btn-secondary{
+    --bs-btn-color: rgb(0, 0, 0);
+    --bs-btn-border-color: #65c6f3;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #f39265;
+    --bs-btn-hover-border-color: #f39265;
+    --bs-btn-bg: #65c6f3;
   }
   .form {
     margin-top: 110px;

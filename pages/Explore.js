@@ -1,7 +1,7 @@
 import Navbar from "../Components/Navbar"
 import Footer from "../Components/Footer"
 import ExploreNav from "../Components/ExploreNav"
-import ArtNav from "../Components/ArtNav"
+
 
 import { ethers } from 'ethers';
 //useState is a Hook that allows you to have state variables in functional components.
@@ -108,7 +108,7 @@ const Explore = () => {
                 </div>
                 <div className="p-4 bg-black">
                   <p className="text-2xl font-bold text-white">{nft.price} Matic</p>
-                  <button className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy</button>
+                  <button className="w-full bg-pink-500 text-black font-bold py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy</button>
                 </div>
               </div>
               

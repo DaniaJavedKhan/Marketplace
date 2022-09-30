@@ -13,26 +13,6 @@ function ExploreNav() {
             <a className="nav-link active" aria-current="page">All NFTs</a>
           </Link>
         </li>
-        <li className="nav-item">
-          <Link href="/Art">
-            <a className="nav-link">Art</a>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link href="/Music">
-            <a className="nav-link">Music</a>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link href="/Videos">
-            <a className="nav-link">Videos</a>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link href="/Virtual_Worlds">
-            <a className="nav-link">Virtual Worlds</a>
-          </Link>
-        </li>
 
       </ul>
 

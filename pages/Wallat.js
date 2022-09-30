@@ -1,5 +1,4 @@
 import React from "react";
- import { LockClosedIcon } from '@heroicons/react/solid';
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
