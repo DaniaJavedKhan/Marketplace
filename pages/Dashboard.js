@@ -88,14 +88,12 @@ export default function Dashboard() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4" >
             {
               sold.map((nft, i) => (
-              <div style={{ maxWidth: '400px', height: '250px' }}>
-                <div key={i} className="border shadow rounded-xl overflow-hidden">
-                  <img style={{ maxWidth: '410px', height: '250px' }}  src={nft.image} className="rounded" />
+              <div key={i} className="border shadow rounded-xl overflow-hidden">
+                  <img style={{ height: '254px', maxWidth: '389px' }}  src={nft.image} />
                   <div className="p-4 bg-black">
                     <p className="text-2xl font-bold text-white">Price - {nft.price} Matic</p>
                   </div>
                 </div>
-              </div>
               ))
             }
             </div><br></br><br></br><br></br><br></br><br></br>
