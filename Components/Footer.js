@@ -13,37 +13,37 @@ export default function Footer() {
         <div>
           <Link href=''>
           <a className='me-4 text-reset'>
-          <img src="facebook-f.svg" alt="" width="30" height="24" />
+          <img src="facebook-f (1).svg" alt="" width="30" height="30" />
           </a>
           </Link>
 
           <Link href=''>
           <a className='me-4 text-reset'>
-          <img src="twitter.svg" alt="" width="30" height="24" />
+          <img src="twitter .svg" alt="" width="30" height="30" />
           </a>
           </Link>
 
           <Link href=''>
           <a className='me-4 text-reset'>
-          <img src="google.svg" alt="" width="30" height="24" />
+          <img src="Google.svg.png" alt="" width="30" height="30" />
           </a>
           </Link>
 
           <Link href=''>
           <a className='me-4 text-reset'>
-          <img src="instagram.svg" alt="" width="30" height="24" />
+          <img src="Instagram.svg.png" alt="" width="30" height="30" />
           </a>
           </Link>
 
           <Link href=''>
           <a className='me-4 text-reset'>
-          <img src="linkedin.svg" alt="" width="30" height="24" />
+          <img src="linkedin (1).svg" alt="" width="30" height="30" />
           </a>
           </Link>
 
           <Link href=''>
           <a className='me-4 text-reset'>
-          <img src="github.svg" alt="" width="30" height="24" />
+          <img src="github (1).svg" alt="" width="30" height="30" />
           </a>
           </Link>
         </div>

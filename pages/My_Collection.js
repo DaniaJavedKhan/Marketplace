@@ -32,7 +32,7 @@ export default function My_Collection(){
 
     const items = await Promise.all(data.map(async i => {
       const tokenUri = await tokenContract.tokenURI(i.tokenId)
-      const meta = await axios.get(tokenUri)
+      const meta = await axios.get(`https://${tokenUri}`)
       let price = ethers.utils.formatUnits(i.price.toString(), 'ether')
       let item = {
         price,
@@ -52,24 +52,25 @@ export default function My_Collection(){
   return (
     <div>
       <Navbar />
-<div className="abc">
-      <div className="flex justify-center">
-      <div className="p-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4" style={{ maxWidth: '350px' }}>
+
+      <div className="flex justify-center" >
+      <div className="p-4"><br></br><br></br><br></br>
+        <h2 className="text-2xl py-2">My Collection</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4" >
           {
             nfts.map((nft, i) => (
-              <div key={i} className="border shadow rounded-xl overflow-hidden">
-                <img src={nft.image} className="rounded" />
+              <div key={i} className="border shadow rounded-xl overflow-hidden" >
+                <img src={nft.image} style={{ maxWidth: '389px', height: '254px' }} />
                 <div className="p-4 bg-black">
-                  <p className="text-2xl font-bold text-white">Price-{nft.price} Eth</p>
+                  <p className="text-2xl font-bold text-white">Price-{nft.price} Matic</p>
                 </div>
               </div>
             ))
-          }
+          }<br></br><br></br><br></br>
         </div>
       </div>
-    </div>
-    </div>
+
+    </div><br></br><br></br><br></br>
 
       <Footer />
     </div>

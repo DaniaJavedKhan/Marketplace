@@ -1,9 +1,11 @@
 require("@nomicfoundation/hardhat-chai-matchers");
 require("@nomiclabs/hardhat-ethers");
+require("@nomiclabs/hardhat-waffle")
+require("@nomiclabs/hardhat-web3");
 
 const fs = require("fs")
 const privateKey = fs.readFileSync(".secret").toString()
-const projectID = "2ElNlzec6kFc8tmFLyWaWSTgXCS"
+const projectID = "2EtS0c8PKz8xwB9E1QejDihdvqk"
 
 module.exports = {
   networks: {
@@ -11,8 +13,12 @@ module.exports = {
       chainId: 1337,
       allowUnlimitedContractSize: true
     },
+    // rinkeby:{
+    //   url: `https://rinkeby.arbitrum.io/rpc`,
+    //   accounts: [privateKey],
+    // },
     mumbai: {
-      url: `https://polygon-mumbai.infura.io/v3/${projectID}`,
+      url: `https://rpc-mumbai.maticvigil.com/`,
       accounts: [privateKey],
       allowUnlimitedContractSize: true,
     },

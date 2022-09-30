@@ -33,7 +33,7 @@ export default function Dashboard() {
 
     const items = await Promise.all(data.map(async i => {
       const tokenUri = await tokenContract.tokenURI(i.tokenId)
-      const meta = await axios.get(tokenUri)
+      const meta = await axios.get(`https://${tokenUri}`)
       let price = ethers.utils.formatUnits(i.price.toString(), 'ether')
       let item = {
         price,
@@ -54,44 +54,57 @@ export default function Dashboard() {
   return (
     <>
      <Navbar />
-    <div className="createclass">
-      <div className="p-4">
+     
+    <div className="flex justify-center">
+      <div className="p-4"><br></br><br></br>
         <h2 className="text-2xl py-2">Items Created</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4" style={{ maxWidth: '350px' }}>
+        <div className="px-4" style={{ maxWidth: '1600px' }}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4" >
         {
           nfts.map((nft, i) => (
             <div key={i} className="border shadow rounded-xl overflow-hidden">
-              <img src={nft.image} className="rounded" />
+              <img style={{ height: '254px', maxWidth:'389px'}} src={nft.image} />
               <div className="p-4 bg-black">
-                <p className="text-2xl font-bold text-white">Price-{nft.price} Eth</p>
+                <p className="text-2xl font-bold text-white">Price-{nft.price} Matic</p>
               </div>
             </div>
+            
           ))
         }
       </div>
       </div>
+      </div><br></br><br></br>
+      
+
+
       <div className="px-4"> 
+      <div className="soldclass">
       {
         Boolean(sold.length) && (
-          <div className="soldclass">
+          
+            <div className="p-4">
             <h2 className="text-2xl py-2">Items sold</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4" style={{ maxWidth: '350px' }}>
+            <div className="px-4" style={{ maxWidth: '1600px' }}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4" >
             {
               sold.map((nft, i) => (
+              <div style={{ maxWidth: '400px', height: '250px' }}>
                 <div key={i} className="border shadow rounded-xl overflow-hidden">
-                  <img src={nft.image} className="rounded" />
+                  <img style={{ maxWidth: '410px', height: '250px' }}  src={nft.image} className="rounded" />
                   <div className="p-4 bg-black">
-                    <p className="text-2xl font-bold text-white">Price - {nft.price} Eth</p>
+                    <p className="text-2xl font-bold text-white">Price - {nft.price} Matic</p>
                   </div>
                 </div>
+              </div>
               ))
             }
+            </div><br></br><br></br><br></br><br></br><br></br>
             </div>
           </div>
         )
       }
-
       </div>
+    </div>
     </div>
      <Footer /> 
     </>
